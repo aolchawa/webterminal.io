@@ -14,7 +14,7 @@ export class TerminalService {
 
   constructor(private http: HttpClient) { }
 
-  executeCommand(cmdStr: string): void {
+  executeCommand(command: string): void {
 
     let cmdExists = false;
 
@@ -23,6 +23,13 @@ export class TerminalService {
       const page = AppConfig.settings.commandMap[i].page;
       const text = AppConfig.settings.commandMap[i].text;
       const clear = AppConfig.settings.commandMap[i].clear;
+      const caseSensitive = AppConfig.settings.commandMap[i].caseSensitive;
+
+      let cmdStr = command;
+
+      if (caseSensitive == null || caseSensitive === false) {
+        cmdStr = cmdStr.toLocaleLowerCase();
+      }
 
       if (cmd === cmdStr) {
         if (clear === true) {
@@ -43,7 +50,7 @@ export class TerminalService {
     }
 
     if (cmdExists === false) {
-      if (cmdStr !== "") {
+      if (command !== "") {
         this.terminalContent += "This command doesn't exist<br>";
       } else {
         this.terminalContent += "<br>";

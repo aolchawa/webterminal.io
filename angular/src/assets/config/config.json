@@ -3,22 +3,26 @@
         {
             "command": "about",
             "page": "assets/pages/about.html",
-            "clear": true
+            "clear": true,
+            "caseSensitive": true
         },
         {
             "command": "help",
             "page": "assets/pages/help.html",
-            "clear": true
+            "clear": true,
+            "caseSensitive": true
         },
         {
             "command": "home",
             "page": "assets/pages/home.html",
-            "clear": true
+            "clear": true,
+            "caseSensitive": false
         },
         {
             "command": "clear",
             "text": "",
-            "clear": true
+            "clear": true,
+            "caseSensitive": false
         }
     ]
 }
