@@ -1,0 +1,47 @@
+/* background #002B36 */
+/* font #BCB8A9 */
+
+.terminal-main {
+    background-color: #002B36;
+    color: #BCB8A9;
+    font-size: 14px;
+    font-family: Consolas, monaco, monospace;
+}
+
+.terminal-input {
+    width: 90%;
+    display: inline-block;
+    cursor: default;
+    border: 0px;
+    outline: none;
+    background-color: #002B36;
+    color: #BCB8A9;
+    caret-color: red;
+}
+
+.terminal-input-icon {
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+.page-title {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.section-title {
+    font-weight: bold;
+}
+
+.section-content {
+    /* placeholder */
+}
+
+.indent-1 {
+    padding-left: 10px;
+}
+
+.indent-2 {
+    padding-left: 20px;
+}

@@ -1,0 +1,24 @@
+{
+    "commandMap": [
+        {
+            "command": "about",
+            "page": "assets/pages/about.html",
+            "clear": true
+        },
+        {
+            "command": "help",
+            "page": "assets/pages/help.html",
+            "clear": true
+        },
+        {
+            "command": "home",
+            "page": "assets/pages/home.html",
+            "clear": true
+        },
+        {
+            "command": "clear",
+            "text": "",
+            "clear": true
+        }
+    ]
+}

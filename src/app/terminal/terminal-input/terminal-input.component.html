@@ -1,0 +1,8 @@
+<div class="input-group">
+    <div class="input-group-prepend">
+        <span class="fas fa-keyboard fa-lg terminal-input-icon" data-toggle="tooltip" data-placement="top"
+            title="Type 'help' for help ;)"></span>
+    </div>
+    <input #cmdInput class="terminal-input" type="text" onblur="this.focus()" autofocus
+        (keydown.enter)="onEnter(cmdInput.value); cmdInput.value = '';">
+</div>
