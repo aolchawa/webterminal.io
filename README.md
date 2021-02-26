@@ -5,7 +5,7 @@ This is an attempt of making a website in a fashion of the most appealing to me 
 Well at least until the Neuralink kicks in ;)
 
 ## Code
-Check the code [here](https://github.com/aolchawa/bubbleplait)
+Check the code [here](https://github.com/aolchawa/webterminal.io)
 
 ## Example usage
 My personal website: [https://andy.codes](https://andy.codes)
